@@ -9,7 +9,7 @@ This project is an electronic circuit that creates an aesthetically pleasing dis
 - Low power consumption
 - Simple and intuitive circuit design
 
-## Materials Used
+## 🔧 Materials Used
 
 - 100μF capacitors (5V and 25V)
 - 555 Timer IC (or similar oscillator)
@@ -18,6 +18,7 @@ This project is an electronic circuit that creates an aesthetically pleasing dis
 - Resistors
 - Cardboard
 - USB (5V) power supply
+- SPDT switch
 
 ## Circuit Diagram
 
@@ -30,7 +31,17 @@ This project is an electronic circuit that creates an aesthetically pleasing dis
 3. Connect the power supply
 4. Check that the LEDs flash sequentially
 
+# Dual-Mode LED Chaser Circuit  
+## 📌 Features  
+- **Mode 1**: All LEDs light up simultaneously.  
+- **Mode 2**: Sequential chasing pattern.  
+- **Control**: Toggle modes with an SPDT switch.  
+
+## 🎯 Project Goals  
+- Learn circuit design and transistor switching.  
+- Create a customizable lighting system.  
+
 ## Adjustments
 
-- Adjust the capacitor values to change the flashing speed Change 
+- Adjust the potentiometer values to change the flashing speed Change (On 555 timer)
 - You can create new effects by trying different LED patterns
