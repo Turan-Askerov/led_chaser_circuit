@@ -24,8 +24,9 @@ This project is an electronic circuit that creates an aesthetically pleasing dis
 
 [https://photos.app.goo.gl/xRYqgWc2JJ7ne4uL8]
 
-## Project Demo
-[![Demo Video](https://photos.app.goo.gl/LFdq1YzX6mz5jpat7)]
+## Project video
+[https://photos.app.goo.gl/LFdq1YzX6mz5jpat7]
+
 
 ## Installation
 
