@@ -1,13 +1,17 @@
-# LED Flasher Circuit
+# Dual-Mode LED Chaser Circuit 
 
 This project is an electronic circuit that creates an aesthetically pleasing display by flashing LEDs sequentially.
 
-## Features
+## 📌 Features
 
 - Multi-LED animation effect
 - Adjustable flashing speed
 - Low power consumption
 - Simple and intuitive circuit design
+
+- **Mode 1**: All LEDs light up simultaneously.  
+- **Mode 2**: Sequential chasing pattern.  
+- **Control**: Toggle modes with an SPDT switch.  
 
 ## 🔧 Materials Used
 
@@ -35,11 +39,6 @@ This project is an electronic circuit that creates an aesthetically pleasing dis
 3. Connect the power supply
 4. Check that the LEDs flash sequentially
 
-# Dual-Mode LED Chaser Circuit  
-## 📌 Features  
-- **Mode 1**: All LEDs light up simultaneously.  
-- **Mode 2**: Sequential chasing pattern.  
-- **Control**: Toggle modes with an SPDT switch.  
 
 ## 🎯 Project Goals  
 - Learn circuit design and transistor switching.  
