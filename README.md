@@ -24,6 +24,9 @@ This project is an electronic circuit that creates an aesthetically pleasing dis
 
 [https://photos.app.goo.gl/xRYqgWc2JJ7ne4uL8]
 
+## Project Demo
+[![Demo Video](https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
+
 ## Installation
 
 1. LEDs are mounted on copper wire (1.5 mm - 2 mm)
