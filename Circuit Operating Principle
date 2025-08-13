@@ -1,0 +1,45 @@
+🔋 Circuit Operating Principle
+Power Input (USB 5V)
+
+The circuit receives a 5V supply via the USB adapter.
+
+This 5V is controlled by reducing it to approximately 4.2V, which is required for charging Li-ion batteries.
+
+Voltage Control (TL431) :
+
+The TL431 is an adjustable precision reference regulator.
+
+The output voltage is determined by the resistor divider connected to it.
+
+When the voltage reaches the safe charging limit of the batteries (around 4.2V), TL431 is activated and cuts off the MOSFET's conduction.
+
+This prevents overcharging.
+
+Switch Element (IRFZ44N MOSFET) :
+
+The MOSFET acts as a switch, transferring the charging current to the batteries.
+
+The MOSFET is turned on and off by the signal provided by the TL431.
+
+The MOSFET provides low-loss and fast switching.
+
+Battery Holders :
+
+The initial design was designed for Li-ion batteries (3.7V nominal).
+
+With the addition of two additional holders, AAA and AA batteries (NiMH or NiCd, 1.2–1.5V) can be connected and charged in series.
+
+The total nominal voltage of two batteries connected in series is ~2.4V, which can reach up to ~2.8–3V at the end of the charge.
+
+Thanks to the circuit limiting system, these batteries can also be charged without overvoltage.
+
+Output Voltage :
+
+Maximum ~4.2V for Li-ion batteries
+
+Maximum ~2.8–3V for NiMH/NiCd dual batteries
+
+Output current is limited by the MOSFET and resistors in the circuit.
+
+💡 In short:
+USB 5V input → Reference voltage adjustment with TL431 → Controlled charging via MOSFET → MOSFET shuts down when the battery voltage reaches the limit value → Overcharging is prevented.
