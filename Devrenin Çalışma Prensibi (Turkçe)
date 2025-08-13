@@ -1,9 +1,9 @@
-Devrenin Çalışma Prensibi
+Devrenin Çalışma Prensibi : 
+
 1. Temel Bileşenler ve Bağlantılar
 CD4017 Entegresi:
 
 Osilatörden gelen sinyalleri sayarak çıkış pinlerini sırayla aktif eder.
-
 Her bir çıkış, bir LED grubunu kontrol eder.
 
 BC547 Transistörler:
@@ -17,48 +17,40 @@ Emitter: LED grubunun katoduna bağlı.
 3 Bacaklı Switch (SPDT):
 
 Orta Bacak: +5V besleme.
-
 Sol Bacak: Transistörlerin base'lerine bağlı (Mod 1: Tüm LED'ler aynı anda yanar).
-
 Sağ Bacak: CD4017 entegresine bağlı (Mod 2: Chaser efekti).
 
 2. Çalışma Modları
+
 Mod 1 - Tüm LED'ler Aynı Anda Yanar:
 
 Switch sol pozisyona alındığında, +5V doğrudan transistörlerin base'lerine uygulanır.
-
 Tüm transistörler iletime geçer ve bağlı oldukları LED grupları aynı anda yanar.
-
 CD4017 entegresinin çıkışları bu modda devre dışı kalır.
 
 Mod 2 - LED Chaser Efekti:
 
-Switch sağ pozisyona alındığında, sinyaller CD4017 entegresine iletilir.
-
-Entegre, osilatörden gelen sinyallere göre çıkış pinlerini sırayla tetikler.
-
-Her çıkış, bir transistörü aktif ederek ilgili LED grubunu yakar.
-
-LED'ler sırayla yanıp söner, klasik chaser efekti oluşur.
+-Switch sağ pozisyona alındığında, sinyaller CD4017 entegresine iletilir.
+-Entegre, osilatörden gelen sinyallere göre çıkış pinlerini sırayla tetikler.
+-Her çıkış, bir transistörü aktif ederek ilgili LED grubunu yakar.
+-LED'ler sırayla yanıp söner, klasik chaser efekti oluşur.
 
 3. Zamanlama ve Kontrol
 Osilatör Devresi:
 
-47µF kondansatör ve dirençlerle oluşturulan RC devresi, CD4017'nin çalışma hızını belirler.
+100µF kondansatör ve dirençlerle oluşturulan RC devresi, CD4017'nin çalışma hızını belirler.
 
 Kondansatör değeri değiştirilerek LED'lerin yanma süresi ayarlanabilir.
 
 Güç Yönetimi:
 
 Transistörlerin base'lerine seri dirençler eklenerek aşırı akım engellenir.
-
 LED'lerin ömrünü korumak için her birine uygun dirençler bağlanır.
 
 Projenin Fiziksel Yapısı
 LED Dizimi:
 
 LED'ler bakır tellere lehimlenmiş ve karton üzerine silikonla sabitlenmiştir.
-
 Kartonun arka tarafına ana devre yerleştirilerek kablo karmaşası önlenmiştir.
 
 Mod Seçici Switch:
@@ -68,7 +60,6 @@ Karton üzerine monte edilen 3 bacaklı switch, kullanıcının mod değiştirme
 Transistör Bağlantıları:
 
 Her LED grubu için ayrı bir BC547 transistör kullanılmıştır.
-
 Transistörlerin bağlantıları, devrenin düzenli çalışmasını sağlamak için dikkatle yapılmıştır.
 
 Projenin Avantajları ve Geliştirme Potansiyeli
@@ -76,11 +67,11 @@ Projenin Avantajları ve Geliştirme Potansiyeli
 ✔ Basit ve Etkili Tasarım: Elektroniğe yeni başlayanlar için öğreticidir.
 ✔ Genişletilebilirlik:
 
-RGB LED'ler eklenerek renkli efektler oluşturulabilir.
-
-Potansiyometre ile yanma hızı ayarlanabilir.
-
-Uzaktan kumanda (IR/RF) eklenerek mod değişimi kolaylaştırılabilir.
+-RGB LED'ler eklenerek renkli efektler oluşturulabilir.
+-Potansiyometre ile yanma hızı ayarlanabilir.
+-Uzaktan kumanda (IR/RF) eklenerek mod değişimi kolaylaştırılabilir.
 
 Sonuç
-Bu proje, temel elektronik prensiplerini uygulamalı olarak öğrenmek isteyenler için ideal bir çalışmadır. LED chaser efekti ve tüm LED'leri aynı anda yakma özellikleriyle hem eğlenceli hem de işlevsel bir devre ortaya çıkmıştır. Geliştirmeye açık yapısı sayesinde, farklı komponentler eklenerek daha karmaşık sistemlere dönüştürülebilir.
+Bu proje, temel elektronik prensiplerini uygulamalı olarak öğrenmek isteyenler için ideal bir çalışmadır.
+LED chaser efekti ve tüm LED'leri aynı anda yakma özellikleriyle hem eğlenceli hem de işlevsel bir devre ortaya çıkmıştır.
+Geliştirmeye açık yapısı sayesinde, farklı komponentler eklenerek daha karmaşık sistemlere dönüştürülebilir.
